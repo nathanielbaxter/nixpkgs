@@ -31,7 +31,7 @@ in
 stdenv.mkDerivation rec {
   name = "teamspeak-client-${version}";
 
-  version = "3.0.19.4";
+  version = "3.1.0.1";
 
   src = fetchurl {
     urls = [
@@ -39,8 +39,8 @@ stdenv.mkDerivation rec {
       "http://teamspeak.gameserver.gamed.de/ts3/releases/${version}/TeamSpeak3-Client-linux_${arch}-${version}.run"
     ];
     sha256 = if stdenv.is64bit
-                then "f74617d2a2f5cb78e0ead345e6ee66c93e4a251355779018fd060828e212294a"
-                else "e11467dc1732ddc21ec0d86c2853c322af7a6b8307e3e8dfebc6b4b4d7404841";
+                then "02w53vlzrnxr281vcsnag4176faxinp431wsx0l8v65xrb5p07yn"
+                else "1j9qkacpj15i1y8ikgzvlq5cb7c6qh80wqsck0p88pfandx6dzq4";
   };
 
   # grab the plugin sdk for the desktop icon
